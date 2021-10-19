@@ -1,0 +1,69 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+#container {
+    width: 600px;
+    height: 740px;
+    margin: 5% 35% -50%;
+    display: block;
+    background-color: #90d3c4;
+    justify-content: center;
+}
+.container {
+    width: 580px;
+    height: auto;
+    background-color: white;
+    margin: 0 2.2% 0 1.5%;
+    justify-content: center;
+    font-size: 12px;
+}
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+p {
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+table, td {
+    padding: 5px;
+}
+td.questions {
+    text-align: right;
+    padding: 0 10px;
+    position: relative;
+}
+td.questions1 {
+    text-align: right;
+    padding: 8px 10px;
+    vertical-align: text-top;
+    
+    
+}
+#name, #email, #age {
+    height: 25px;
+}
+#suggestions {
+    height: 40px;
+    width: 250px;
+}
+#submit {
+    text-align: center;
+    padding: 0 0 13px 0;
+    margin-top: -10px;
+}
+.submit-button {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    width: 13%;
+    height: 25px;
+    background:#79adcf;
+    color: #FFF;
+    border: 2px solid #79adcf;
+    letter-spacing: 0.5px;
+    border-radius: 4px; 
+    cursor: pointer;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    margin-top: 15px;
+}

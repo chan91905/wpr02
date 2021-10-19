@@ -1,0 +1,155 @@
+body {
+    font-family: 'Lora', sans-serif;
+    color: white;
+}
+header {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('header.jpg');
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+nav {
+    padding: 20px 20px;
+    position: relative;
+
+}
+header ul {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+nav ul li a {
+    text-decoration: none;
+    transform: uppercase;
+    display: block;
+    color: white;
+    list-style: none;
+    margin-left: 30px;
+}
+nav ul li {
+    display: inline-block;
+    text-align: center;
+}
+a.active {
+    border: 1px solid;
+    border-radius: 100px;
+    border-color: white;
+    padding: 10px 15px;
+}
+
+ul li a.active:hover {
+    border-radius: 100px;
+    color:black;
+    background: white;
+    padding: 10px 15px;
+    transition: 0.3s;
+
+}
+.logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+.content {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 13%;
+    margin-bottom: auto;
+}
+p {
+    margin:10px 0;
+}
+.lineone {
+    font-size: 15px;
+}
+.linetwo {
+    font-size: 60px;
+}
+button {
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(54, 179,168);
+    padding: 15px 15px;
+    color: white;
+    font-family: 'Lora', sans-serif;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(54, 179,168,0.6)
+}
+section {
+    padding: 100px 100px;
+    font-family: 'Open Sans';
+}
+.container-body {
+    max-width: 89%;
+    
+    width: 100%;
+    padding: 0 125px;
+    text-align: center;
+}
+.title {
+    font-size: 28px;
+    color: black;
+}
+.title-reasons {
+    width: 60%;
+    margin: auto;
+    padding: 16px;
+    line-height: 36px;
+    color: rgb(145, 145, 145);
+}
+#album {
+    padding: 125px;
+    text-align: center;
+    
+}
+#album img {
+    width: 85%;
+    height: auto;
+}
+.album-item:first-child {
+    width: calc((100%-40px)/2);
+    float:left;
+}
+.album-item {
+    width: calc((100%-40px)/2);
+    float: right;
+    
+}
+.album-content h1 {
+    color: rgb(61, 153, 145);
+    line-height: 36px;
+    font-family: 'Open Sans', sans-serif;
+}
+.album-content p {
+    color: rgb(145, 145, 145);
+}
+footer {
+    margin-top: 350px;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.container-footer {
+    text-align: center;
+    padding: 30px 0 75px 75px;
+    font-family: 'Open Sans';
+}
+.container-footer h3 {
+    letter-spacing: 1px;
+    color: rgb(238, 238, 238);
+}
+.container-footer p {
+    padding: 1px;
+    color: rgb(145, 145, 145);
+}

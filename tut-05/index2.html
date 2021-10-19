@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+
+        <div class="header">
+            <h2>Survey Form</h2>
+        </div>
+
+        <div class="form-content">
+            <div class="container">
+                <p>Let us know how we can improve freeCodeCamp</p>
+                <table>
+                    <form>
+                        <tr class="input-data">
+                            <td class="questions"><label for="Name">* Name:</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                        </tr>
+        
+                        <tr class="input-data">
+                            <td class="questions"><label for="Email">* Email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Enter your Email" required></td>
+                        </tr>
+                        
+                        <tr class="input-data">
+                            <td class="questions"><label for="age">* Age:</label></td>
+                            <td><input type="number" id="age" name="age" placeholder="Age" required></td>
+                        </tr>
+        
+                        <tr class="dropdown-option">
+                            <td class="questions"><label>Which option best describes your current role:</label></td>
+                            <td>
+                                <select class="role">
+                                    <option>Student</option>
+                                    <option>Teacher</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="radio-option">
+                            <td class="questions1"><label>How likely is that you would recommend <br>freeCodeCamp to a friend?</label></td>
+                            <td>
+                                <input type="radio" name="radiogroup1" id="definitely">
+                                <label for="definitely">Definately</label>
+                                <br>
+                                <input type="radio" name="radiogroup1" id="maybe">
+                                <label for="maybe">Maybe</label>
+                                <br>
+                                <input type="radio" name="radiogroup1" id="not-sure">
+                                <label for="not-sure">Not sure</label>
+                            </td>
+                        </tr>
+
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="dropdown-option">
+                            <td class="questions"><label>What do you like most in FCC:</label></td>
+                            <td>
+                                <select>
+                                    <option>Select an option</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="checkbox">
+                            <td class="questions1"><label>Things that should be improved in the future <br>(Check all that applied)</label></td>
+        
+                            <td>
+                                <input type="checkbox" name="checkboxgroup1" id="front-end-project">
+                                <label for="front-end-project">Front-end Projects</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="back-end-project">
+                                <label for="back-end-project">Back-end Projects</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="data-visualation">
+                                <label for="data-visualation">Data Visualation</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="challengers">
+                                <label for="challengers">Challengers</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="open-source-community">
+                                <label for="open-source-community">Open Source Community</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="gitter-help-roam">
+                                <label for="gitter-help-roam">Gitter help roams</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="videos">
+                                <label for="videos">Videos</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="city-meetups">
+                                <label for="city-meetups">City meetups</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="wiki">
+                                <label for="wiki">Wiki</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="forum">
+                                <label for="forum">forum</label>
+                                <br>
+                                <input type="checkbox" name="checkboxgroup1" id="addtional-courses">
+                                <label for="additional-courses">Additional Courses</label>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="suggestions">
+                            <td class="questions1"><label for="suggestions">Any comments or Suggestions?</label></td>
+                            <td><textarea id="suggestions" name="suggestions" placeholder="Enter your comment here..." required></textarea>
+                        </tr>
+                    </form>
+                </table>
+
+                <form>
+                    <div id="submit">
+                        <input class="submit-button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</body>
+</html>
