@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "capsuularegular";
+    src: url("fonts/cagliostro-capsuula-generated/capsuula-webfont.woff2")
+        format("woff2"),
+      url("fonts/cagliostro-capsuula-generated/capsuula-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html {
+    font-size: 10px; 
+    letter-spacing: 1.5px; 
+    word-spacing: 1.5px;
+  }
+  
+  h1,
+  h2 {
+    font-family: "cagliostroregular"; 
+    font-size: 3rem; 
+  }
+
+  p {
+    color: rgb(119, 119, 119);
+  }
+  
+  p,
+  a,
+  ul,
+  ol,
+  li {
+    font-family: "capsuularegular"; 
+    font-size: 2rem; 
+    line-height: 1.5; 
+  }
+  
+  h2 + p {
+    text-indent: 20px; /*Gave the first paragraph after each heading in the <section> a little bit of text-indentation of 20px.*/
+  }
+  
+  a {
+    text-decoration: underline; 
+  }
+  
+  a:link {
+    color:#a66; /*Gave unvisited links color*/
+  }
+  
+  a:visited {
+    color: rgb(54, 160, 209); /*Added color to the visited state*/
+  }
+
+  a:hover {
+    color: rgb(233, 167, 167);
+  }
