@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type="number" id="firstNumber">
+    <input type="number" id="secondNumber">
+    <br>
+    <br>
+    <button id="addBtn">Addition(+)</button>
+    <button id="subtractBtn">Subtraction(-)</button>
+    <button id="multipleBtn">Multiplication(*)</button>
+    <button id="divisionBtn">Division(/)</button>
+    <br>
+    <br>
+    <span id="result"></span>
+
+    <script>
+        let firstNumber, secondNumber;
+        let firstNumberInput = document.getElementById('firstNumber');
+        let secondNumberInput = document.getElementById('secondNumber');
+        let addBtn = document.getElementById('addBtn');
+        let subtractBtn = document.getElementById('subtractBtn');
+        let multipleBtn = document.getElementById('multipleBtn');
+        let divisionBtn = document.getElementById('divisionBtn');
+        let result = document.getElementById('result');
+
+        function getNumbers(){
+            firstNumber = parseFloat(firstNumberInput.value);
+            secondNumber = parseFloat(secondNumberInput.value);
+        }
+
+        addBtn.addEventListener('click',function(){
+            getNumbers();
+            result.innerText = "Result Addition :"+(firstNumber+secondNumber);
+        });
+
+        subtractBtn.addEventListener('click',function(){
+            getNumbers();
+            result.innerText = "Result Subtraction :"+(firstNumber-secondNumber);
+        });
+
+        multipleBtn.addEventListener('click',function(){
+            getNumbers();
+            result.innerText = "Result Multiplication :"+(firstNumber*secondNumber);
+        });
+
+        divisionBtn.addEventListener('click',function(){
+            getNumbers();
+            result.innerText = "Result Devision :"+(firstNumber/secondNumber);
+        });
+    </script>
+</body>
+</html>
