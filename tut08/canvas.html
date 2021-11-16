@@ -8,8 +8,61 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <canvas id="name" width=""
+    <div style="border: 1px solid black; height: 600px; width:800px; background-color: black;">
+        <img id="tank" src="1990_icon.png" style="position: relative; top: 0px; left: 0px;" width="19" height="19">
     </div>
+
+    <div class="container">
+        <button onclick="upArrow()">&#8593;</button>
+        <br>
+        <button onclick="leftArrow()">&#8592;</button>
+        <button onclick="rightArrow()">&#8594;</button>
+        <br>
+        <button onclick="bottomArrow()">&#8595;</button>
+    </div>
+    
+
+    <script>
+        let gameContext = document.getElementById("game").gameContext("2d");
+        let rectX = rectY = 20;
+        let speed = 20;
+
+        function drawRect() {
+            gameContext.beginPath();
+            gameContext.fillRect(rectX, rectY, 150,100);
+        }
+
+        function upArrow() {
+            gameContext.clearRect(rectX, rectY, 150,100);
+            if (rectY > 0) {
+                rectY -= speed;
+            }
+            drawRect;
+        }
+
+        function downArrow() {
+            gameContext.clearRect(rectX, rectY, 150,100);
+            if (rectY + 100 < 600) {
+                rectY += speed;
+            }
+            drawRect;
+        }
+
+        function rightArrow() {
+            gameContext.clearRect(rectX, rectY, 150,100);
+            if (rectX + 150 < 800) {
+                rectX += speed;
+            }
+            drawRect;
+        }
+
+        function leftArrow() {
+            gameContext.clearRect(rectX, rectY, 150,100);
+            if (rectX > 0) {
+                rectX -= speed;
+            }
+            drawRect;
+        }
+    </script>
 </body>
 </html>
